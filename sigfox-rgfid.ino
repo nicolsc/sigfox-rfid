@@ -4,11 +4,11 @@
 #define ARDUINO_INTERRUPT_1 3
 
 #define SIGFOX_RX 5
-#define SIGFOX_TX
+#define SIGFOX_TX 4
 
 #define LED_PIN 13
 
-SoftwareSerial sigfox(SIGFOX_RX,SIGFOX_RX);
+SoftwareSerial sigfox(SIGFOX_RX,SIGFOX_TX);
 
 long bufferVal = 0;
 int bitsRead = 0;
